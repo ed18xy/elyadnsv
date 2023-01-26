@@ -1,0 +1,121 @@
+/* Import the font */
+@import url('https://fonts.googleapis.com/css2?family=Garlic+Bread&display=swap');
+
+@font-face {
+  font-family: 'Monoton';
+  src: url('Monoton/Monoton-Regular.ttf') format('truetype');
+}
+
+/* Set the font for the entire document */
+main {
+  font-family: 'Garlic Bread', cursive;
+}
+
+
+/* Set the background image */
+body {
+  background-image: url('file:///Users/elizabethdenysova/Desktop/MyW/img/milky.jpeg'); /* Switch to online url*/
+  
+  /* Scale the image to fit the screen */
+  background-size: cover;
+  
+  /* Position the image in the center */
+  background-position: center;
+  
+  /* Make the image fixed so it does not scroll with the page */
+  background-attachment: fixed;
+}
+
+/* Set the color of the text in the header to green */
+header {
+  color: green;
+}
+
+/* Set the background color of the navigation menu to black */
+nav {
+  background-color: rgba(0, 4, 255, 0.292);
+  
+}
+
+/* Set the color of the text in the navigation menu to purple */
+nav a {
+  color: purple;
+  text-decoration: none;
+  font-size: 15pt;
+}
+
+/* Add a hover effect to the navigation menu links */
+nav a:hover {
+  font-size: 20pt;
+  text-shadow: 5px 5px 15px rgba(7, 7, 7, 0.79);
+}
+
+/* Set the side menu to be fixed on the left side of the screen */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15%; /* Set the width of the menu */
+  height: 100%; /* Make the menu as tall as the screen */
+}
+
+/* Add some styles to the links in the menu */
+nav a {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+
+/* Add some margin to the main content to make room for the fixed menu */
+main {
+  margin-left: 15%; /* The width of the menu */
+  color: rgb(255, 255, 255); 
+}
+
+/* Add some padding to the sections */
+section {
+  padding: 20px;
+}
+
+/* Add some margin to the bottom of the footer */
+footer {
+  margin-bottom: 20px;
+}
+
+#about {
+  background-color: rgba(104, 36, 144, 0.419);
+}
+
+#achievements {
+  background-color: rgba(83, 28, 114, 0.419);
+}
+
+#contact {
+  background-color: rgba(59, 20, 81, 0.419);
+}
+
+#personalName {
+  margin-left: 5%;
+  font-size: 20pt;
+  color: rgba(237, 212, 212, 0.62);
+  font-family: 'Monoton', sans-serif;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color:rgba(17, 52, 119, 0.866)
+}
+
+nav img {
+  width: 100pt;
+  float: left;
+  padding: 10pt;
+  margin-right: 10pt;
+}
+
+
+
