@@ -39,7 +39,7 @@ nav {
 
 /* Set the color of the text in the navigation menu to purple */
 nav a {
-  color: purple;
+  color: rgb(180, 0, 246);
   text-decoration: none;
   font-size: 15pt;
 }
@@ -48,6 +48,7 @@ nav a {
 nav a:hover {
   font-size: 20pt;
   text-shadow: 5px 5px 15px rgba(7, 7, 7, 0.79);
+  color: white;
 }
 
 /* Set the side menu to be fixed on the left side of the screen */
@@ -66,16 +67,25 @@ nav a {
   align-items: center;
 }
 
+nav img {
+  width: 100pt;
+  float: left;
+  padding: 10pt;
+  margin-right: 10pt;
+}
+
 
 /* Add some margin to the main content to make room for the fixed menu */
 main {
   margin-left: 15%; /* The width of the menu */
   color: rgb(255, 255, 255); 
+  font-size: larger;
 }
 
 /* Add some padding to the sections */
 section {
   padding: 20px;
+  margin-bottom: 40px;
 }
 
 /* Add some margin to the bottom of the footer */
@@ -83,23 +93,43 @@ footer {
   margin-bottom: 20px;
 }
 
-#about {
+#intro {
   background-color: rgba(104, 36, 144, 0.419);
 }
 
-#achievements {
+#about {
   background-color: rgba(83, 28, 114, 0.419);
 }
 
-#contact {
+#achievements {
   background-color: rgba(59, 20, 81, 0.419);
+}
+
+#contact {
+  background-color: rgba(46, 17, 65, 0.419);
 }
 
 #personalName {
   margin-left: 5%;
   font-size: 20pt;
-  color: rgba(237, 212, 212, 0.62);
+  color: rgb(255, 255, 255);
   font-family: 'Monoton', sans-serif;
+}
+
+#social {
+  text-decoration: none;
+  color: white;
+  text-align:center;
+  margin-top: 100px;
+}
+
+#social a {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+#social a:hover {
+  color: rgb(255, 0, 153);
 }
 
 
@@ -110,12 +140,11 @@ footer {
   color:rgba(17, 52, 119, 0.866)
 }
 
-nav img {
-  width: 100pt;
+#sectionimg {
+  width: 20%;
   float: left;
-  padding: 10pt;
-  margin-right: 10pt;
 }
+
 
 
 
