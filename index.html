@@ -5,6 +5,7 @@
     <link rel="icon" href="img/planetLogo.png" type="image/x-icon">
     <title>Your Name - Personal Website</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="../local/script_manifold.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
   </head>
   <body>
@@ -14,7 +15,10 @@
         <h2 id="personalName">FullName LastName</h2>
         <ul>
           <div><a href="#intro">Intro</a></div>
-          <div><a href="#achievements">Achievements</a></div>
+          <div><a href="#about">About me</a></div>
+          <div><a href="#insp">Inspiration</a></div>
+          <div><a href="#exp">Experience</a></div>
+          <div><a href="#skills">Skills&Achievements</a></div>
           <div><a href="#contact">Contact Me</a></div>
         </ul>
         <div id="social"><a href="https://www.linkedin.com/in/yourusername">
@@ -47,23 +51,60 @@
         </p>
     </section>
     <section id="insp">
-        <a><img id="sectionimg" src="img/sun.png" alt="ship"></a>
+        <a><img id="sectionimg" src="img/inspoplanet.png" alt="ship"></a>
         <h1>Inspiration</h1>
-        <p>This is me. The bright sun of the universe and the energy source for everything around.
-            <br/>So let me tell you more about myself. I am a Computer Science student at Brock university. 
-            I come from a lovely busy city Dnepr in Ukraine.  
+        <p>This is my inpiration planet. Here I grow everything that inspire me and brings out 
+            my creativity. This is a very special planet because it makes everything else better and fun.
+            <br/>My biggest inspiration for my coding journey....
+            <br/>Science fiction.... One of my favourite authors is Ray bradbury...
+            <br/>What is more fun and entertaning than video games?
+            <br/>Dancing  - one of my favourite forms of self expression... And it doesn't come without 
+            music
+
         </p>
     </section>
-      <section id="achievements">
+    <section id="exp">
+        <a><img id="sectionimg" src="img/expo.png" alt="ship"></a>
+        <h1>Experience</h1>
+        <p>Over the years of the existance of this universe, experience planet developed greatly.</p>
+        <button type="button" class="collapsible">Junior developer: Ministry of Transportation  <i class="fa fa-caret-down"></i></button>
+<div class="content">
+  <p>Enhanced code quality and performance significantly for Ontario Public Service educational website by restructuring models and optimizing APIs Used JavaScript for the Front-End of the website along with Bootstrap and React
+    Improved C# Back-End and SQL Server database
+    Performed research and prepared detailed report as well as presentation on tools and technologies that ministry should consider for enabling MTO's Data Marketplace</p>
+</div><br/>
+<button type="button" class="collapsible">Lead Instructor: CodeNinjas  <i class="fa fa-caret-down"></i></button>
+<div class="content">
+  <p>Examined and updated the Create program curriculum for game development in Scratch, RobloxStudio, Unity, and JavaScript based Game Development Platform
+    Assisted in management and execution of summer camps for 16 youth ages 5-14 focused on a variety of activities in Scratch, RobloxStudio, Minecraft, YouTube, and SonicPi
+    Increased students' ability to learn and explore objects as well as functions by upgrading the search feature and developing new content on the documentation website</p>
+</div>
+    </section>
+
+    <section id="skills">
+        <a><img id="sectionimg" src="img/portfolio.png" alt="ship"></a>
+        <h1>Skills & Achievements</h1>
+        <p>This is my inpiration planet. Here I grow everything that inspire me and brings out 
+            my creativity. This is a very special planet because it makes everything else better and fun.
+            <br/>My biggest inspiration for my coding journey....
+            <br/>Science fiction.... One of my favourite authors is Ray bradbury...
+            <br/>What is more fun and entertaning than video games?
+            <br/>Dancing  - one of my favourite forms of self expression... And it doesn't come without 
+            music
+    
+        </p>
         <h1>My Achievements</h1>
         <ul>
-          <li>Achievement 1</li>
+          <li>Dean's Honour List - Year Two  <a href="docs/DH.pdf" download><i class="fa fa-download"></i></a></li>
           <li>Achievement 2</li>
           <li>Achievement 3</li>
         </ul>
-      </section>
+    </section>
+
       <section id="contact">
+        <a><img id="sectionimg" src="img/station.png" alt="ship"></a>
         <h1>Contact Me</h1>
+        <p>Stop by my contact station.</p>
         <form action="submit-form.php" method="post">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name">
@@ -75,6 +116,22 @@
         </form>
       </section>
     </main>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
     <footer>
       <p>Copyright ©2021 Your Name</p>
     </footer>

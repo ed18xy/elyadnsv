@@ -11,6 +11,11 @@ main {
   font-family: 'Garlic Bread', cursive;
 }
 
+nav ul {
+  font-family: 'Garlic Bread', cursive;
+  padding: 7%;
+}
+
 
 /* Set the background image */
 body {
@@ -46,7 +51,6 @@ nav a {
 
 /* Add a hover effect to the navigation menu links */
 nav a:hover {
-  font-size: 20pt;
   text-shadow: 5px 5px 15px rgba(7, 7, 7, 0.79);
   color: white;
 }
@@ -68,10 +72,10 @@ nav a {
 }
 
 nav img {
-  width: 100pt;
+  width: 80pt;
   float: left;
-  padding: 10pt;
-  margin-right: 10pt;
+  padding: 20pt;
+  margin-right: 20pt;
 }
 
 
@@ -101,13 +105,22 @@ footer {
   background-color: rgba(83, 28, 114, 0.419);
 }
 
-#achievements {
+#insp {
   background-color: rgba(59, 20, 81, 0.419);
 }
 
-#contact {
+#exp {
   background-color: rgba(46, 17, 65, 0.419);
 }
+
+#skills{
+  background-color: rgba(30, 11, 43, 0.419);
+}
+
+#contact{
+  background-color: rgba(20, 3, 34, 0.419);
+}
+
 
 #personalName {
   margin-left: 5%;
@@ -145,6 +158,28 @@ footer {
   float: left;
 }
 
+.collapsible {
+  cursor: pointer;
+  padding: 18px;
+  border: none;
+  background-color: rgba(210, 180, 140, 0);
+  font-size: larger;
+  color: white;
+}
 
+.collapsible:hover {
+  text-decoration: underline;
+}
 
+.content {
+  display: none;
+  overflow: hidden;
+}
 
+main a {
+  color: white;
+}
+
+main a :hover {
+  color: greenyellow;
+}
