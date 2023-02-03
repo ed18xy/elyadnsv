@@ -14,7 +14,7 @@ var circles = [];
 
 // Function to create a new circle
 function createCircle() {
-  if(circles.length < 11) {
+  if(circles.length < 5) {
   // Generate random x and y coordinates for the circle
   var x = Math.random() * (canvas.width*0.5);
   var y = Math.random() * (canvas.height*0.5);
@@ -23,15 +23,15 @@ function createCircle() {
   var imgwidth = Math.random() * 50 + 50;
 
   // Generate random x and y velocity for the circle
-  var xVelocity = Math.random() * 10 - 5;
-  var yVelocity = Math.random() * 10 - 5;
+  var xVelocity = Math.random() * 15 - 5;
+  var yVelocity = Math.random() * 15 - 5;
 
   //create image
   var source;
   let idx = Math.random();
-  if(idx<0.33)source = "img/ast.png";
-  else if(idx<0.66)source = "img/ast2.png";
-  else source = "img/ast3.png";
+  if(idx<0.33)source = "ast.png";
+  else if(idx<0.66)source = "ast2.png";
+  else source = "ast3.png";
 
   // Create the circle object
   var circle = {
@@ -49,12 +49,12 @@ function createCircle() {
 }
 
 canvas.addEventListener("click", (event) => {
-    const rect = canvas.getBoundingClientRect();
-    const x = event.clientX - rect.left;
-    const y = event.clientY - rect.top;
+    const x = event.clientX;
+    const y = event.clientY;
+    console.log( event.clientX+" "+ event.clientY);
     for (let i = 0; i < circles.length; i++) {
         const circle = circles[i];
-        if (x+15 > circle.x && x-15 < circle.x + circle.imgwidth && y+15 > circle.y && y-15 < circle.y + circle.imgheight) {
+        if (x > circle.x && x < circle.x + circle.imgwidth && y > circle.y && y < circle.y + circle.imgheight) {
             circles.splice(i, 1);
             i--;
             explosion_x = x;
@@ -92,7 +92,7 @@ function animate() {
 
     if(indicator>0){
         let imageExp = new Image();
-        imageExp.src = "img/explosion.png";
+        imageExp.src = "explosion.png";
         ctx.drawImage(imageExp, explosion_x, explosion_y, 2*indicator, 2*indicator);
     }
     indicator = indicator-1;

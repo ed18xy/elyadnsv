@@ -119,6 +119,7 @@ footer {
 
 #contact{
   background-color: rgba(20, 3, 34, 0.419);
+  margin-top: 60%;
 }
 
 
@@ -182,4 +183,8 @@ main a {
 
 main a :hover {
   color: greenyellow;
+}
+
+#game {
+  position: absolute;
 }
