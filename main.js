@@ -3,7 +3,7 @@ var canvas = document.getElementById("game");
 var ctx = canvas.getContext("2d");
 var explosion_x, explosion_y;
 var indicator = 0;
-
+var score = 0;
 
 // Set the canvas dimensions to fill the screen
 canvas.width = window.innerWidth*0.8;
@@ -48,6 +48,12 @@ function createCircle() {
   circles.push(circle);}
 }
 
+function drawScoreboard() {
+    ctx.font = "24px ModernW";
+    ctx.fillStyle = "white";
+    ctx.fillText("Score: " + score, 10, 30);
+}
+
 canvas.addEventListener("click", (event) => {
     const rect = canvas.getBoundingClientRect();
     const x = event.clientX - rect.left;
@@ -60,6 +66,7 @@ canvas.addEventListener("click", (event) => {
             explosion_x = x;
             explosion_y = y;
             indicator = 100;
+            score++;
         }
     }
 });
@@ -90,21 +97,23 @@ function animate() {
     image.src = circle.img;
     ctx.drawImage(image, circle.x, circle.y, circle.imgwidth, circle.imgheight);
 
-    if(indicator>0){
+    if(indicator>10){
         let imageExp = new Image();
         imageExp.src = "img/explosion.png";
-        ctx.drawImage(imageExp, explosion_x, explosion_y, 2*indicator, 2*indicator);
+        ctx.drawImage(imageExp, explosion_x-indicator, explosion_y-indicator, 2*indicator, 2*indicator);
     }
-    indicator = indicator-1;
+    indicator = indicator-0.5;
 
   }
+
+  drawScoreboard();
 
   // Call the animate function again on the next frame
   requestAnimationFrame(animate);
 }
 
 // Create a new circle every second
-setInterval(createCircle, 1000);
+setInterval(createCircle, 800);
 
 // Start the animation
 animate();

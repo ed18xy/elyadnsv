@@ -5,6 +5,10 @@
   font-family: 'Monoton';
   src: url('Monoton/Monoton-Regular.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'ModernW';
+  src: url('modern-warfare/ModernWarfare-OV7KP.ttf') format('truetype');
+}
 
 /* Set the font for the entire document */
 main {
@@ -60,7 +64,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 15%; /* Set the width of the menu */
+  width: 18%; /* Set the width of the menu */
   height: 100%; /* Make the menu as tall as the screen */
 }
 
@@ -81,15 +85,16 @@ nav img {
 
 /* Add some margin to the main content to make room for the fixed menu */
 main {
-  margin-left: 15%; /* The width of the menu */
+  margin-left: 20%; /* The width of the menu */
   color: rgb(255, 255, 255); 
-  font-size: larger;
+  font-size: 130%;
 }
 
 /* Add some padding to the sections */
 section {
-  padding: 20px;
-  margin-bottom: 40px;
+  padding: 10px;
+  margin-bottom: 30px;
+  align-content: space-evenly;
 }
 
 /* Add some margin to the bottom of the footer */
@@ -119,13 +124,13 @@ footer {
 
 #contact{
   background-color: rgba(20, 3, 34, 0.419);
-  margin-top: 60%;
 }
+
 
 
 #personalName {
   margin-left: 5%;
-  font-size: 20pt;
+  font-size: x-large;
   color: rgb(255, 255, 255);
   font-family: 'Monoton', sans-serif;
 }
@@ -164,7 +169,7 @@ footer {
   padding: 18px;
   border: none;
   background-color: rgba(210, 180, 140, 0);
-  font-size: larger;
+  font-size: 140%;
   color: white;
 }
 
@@ -185,6 +190,3 @@ main a :hover {
   color: greenyellow;
 }
 
-#game {
-  position: absolute;
-}
