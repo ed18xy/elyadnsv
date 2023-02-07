@@ -126,7 +126,10 @@ footer {
   background-color: rgba(20, 3, 34, 0.419);
 }
 
-
+#gameplace h3{
+  color: yellow;
+  background-color: black;
+}
 
 #personalName {
   margin-left: 5%;
