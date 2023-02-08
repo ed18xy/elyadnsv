@@ -117,3 +117,25 @@ setInterval(createCircle, 800);
 
 // Start the animation
 animate();
+
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.getElementById("contact-form");
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = form.elements.name.value;
+    const message = form.elements.message.value;
+
+    // Validate form inputs
+    if (!name || !message) {
+      alert("All fields are required!");
+      return;
+    }
+
+    window.location.href = "mailto:elyadenysova@gmail.com?subject="+name+"&body="+message;
+
+    // Reset form after submit
+    form.reset();
+  });
+});
