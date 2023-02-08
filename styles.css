@@ -12,11 +12,11 @@
 
 /* Set the font for the entire document */
 main {
-  font-family: 'Garlic Bread', cursive;
+  font-family: 'Garlic Bread';
 }
 
 nav ul {
-  font-family: 'Garlic Bread', cursive;
+  font-family: 'Garlic Bread';
   padding: 7%;
 }
 
