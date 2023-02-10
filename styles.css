@@ -23,7 +23,7 @@ nav ul {
 
 /* Set the background image */
 body {
-  background-image: url('img/milky.jpeg'); /* Switch to online url*/
+  background-image: url('img/sky.webp'); /* Switch to online url*/
   
   /* Scale the image to fit the screen */
   background-size: cover;
