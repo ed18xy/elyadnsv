@@ -171,10 +171,10 @@
         var planets = document.getElementsByClassName("sectionimg");
         
         for (var i = 0; i < planets.length; i++) {
-          if(window.innerWidth>750){
+          if(window.width>750){
             planets[i].style.width = 0.25*section.offsetWidth+'px';
           }else{
-            planets[i].style.width = 1.6*section.offsetWidth+'px';
+            planets[i].style.width = 0.4*section.offsetWidth+'px';
           }
           
         }
