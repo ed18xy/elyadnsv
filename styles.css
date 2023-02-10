@@ -6,18 +6,30 @@
   src: url('Monoton/Monoton-Regular.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'ModernW';
-  src: url('modern-warfare/ModernWarfare-OV7KP.ttf') format('truetype');
+  font-family: 'Varino';
+  src: url('varino-normal-font/VarinonormalRegular-nRYg4.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Glitch';
+  src: url('glitch-inside-font/GlitchInside-0Wjro.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('ubuntu-font/Ubuntu-n1M0.ttf') format('truetype');
 }
 
 /* Set the font for the entire document */
 main {
-  font-family: Arial, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 nav ul {
-  font-family: Arial, sans-serif;
+  font-family: "Glitch", sans-serif;
   padding: 7%;
+}
+
+main h1{
+  font-family: 'Varino', sans-serif;
 }
 
 
@@ -48,15 +60,15 @@ nav {
 
 /* Set the color of the text in the navigation menu to purple */
 nav a {
-  color: rgb(180, 0, 246);
+  color: white;
   text-decoration: none;
   font-size: 15pt;
 }
 
 /* Add a hover effect to the navigation menu links */
 nav a:hover {
-  text-shadow: 5px 5px 15px rgba(7, 7, 7, 0.79);
-  color: white;
+  text-shadow: 5px 5px 15px rgba(7, 9, 7, 0.865);
+  color: rgb(183, 0, 255);
 }
 
 /* Set the side menu to be fixed on the left side of the screen */
@@ -64,7 +76,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 18%; /* Set the width of the menu */
+  width: 20%; /* Set the width of the menu */
   height: 100%; /* Make the menu as tall as the screen */
 }
 
@@ -85,7 +97,7 @@ nav img {
 
 /* Add some margin to the main content to make room for the fixed menu */
 main {
-  margin-left: 20%; /* The width of the menu */
+  margin-left: 24%; /* The width of the menu */
   color: rgb(255, 255, 255); 
   font-size: 130%;
 }
@@ -93,8 +105,10 @@ main {
 /* Add some padding to the sections */
 section {
   padding: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 7%;
   align-content: space-evenly;
+  margin-top: 7%;
+
 }
 
 /* Add some margin to the bottom of the footer */
@@ -103,27 +117,27 @@ footer {
 }
 
 #intro {
-  background-color: rgba(104, 36, 144, 0.419);
+  background-color: rgba(104, 36, 144, 0.57);
 }
 
 #about {
-  background-color: rgba(83, 28, 114, 0.419);
+  background-color: rgba(83, 28, 114, 0.57);
 }
 
 #exp {
-  background-color: rgba(61, 21, 84, 0.419);
+  background-color: rgba(61, 21, 84, 0.57);
 }
 
 #skills{
-  background-color: rgba(41, 14, 57, 0.419);
+  background-color: rgba(41, 14, 57, 0.57);
 }
 
 #insp {
-  background-color: rgba(25, 6, 36, 0.419);
+  background-color: rgba(25, 6, 36, 0.57);
 }
 
 #contact{
-  background-color: rgba(20, 3, 34, 0.419);
+  background-color: rgba(20, 3, 34, 0.57);
 }
 
 #gameplace h3{
@@ -193,3 +207,12 @@ main a :hover {
   color: greenyellow;
 }
 
+#contactinfo {
+  color: white;
+  text-align:left;
+}
+
+#contactinfo div {
+  display: inline-block;
+  margin-left: 10px;
+}
