@@ -1,21 +1,19 @@
-/* Import the font */
-@import url('https://fonts.googleapis.com/css2?family=Garlic+Bread&display=swap');
 
 @font-face {
   font-family: 'Monoton';
-  src: url('Monoton/Monoton-Regular.ttf') format('truetype');
+  src: url('technovier-bold-font/TechnovierBold-1GY5g.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Varino';
   src: url('varino-normal-font/VarinonormalRegular-nRYg4.otf') format('truetype');
 }
 @font-face {
-  font-family: 'Glitch';
-  src: url('glitch-inside-font/GlitchInside-0Wjro.otf') format('truetype');
-}
-@font-face {
   font-family: 'Ubuntu';
   src: url('ubuntu-font/Ubuntu-n1M0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'ModernW';
+  src: url('modern-warfare/ModernWarfare-OV7KP.ttf') format('truetype');
 }
 
 /* Set the font for the entire document */
@@ -24,7 +22,7 @@ main {
 }
 
 nav ul {
-  font-family: "Glitch", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   padding: 7%;
 }
 
@@ -45,6 +43,7 @@ body {
   
   /* Make the image fixed so it does not scroll with the page */
   background-attachment: fixed;
+
 }
 
 /* Set the color of the text in the header to green */
@@ -76,7 +75,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  width: 20%; /* Set the width of the menu */
+  width: min-content;
   height: 100%; /* Make the menu as tall as the screen */
 }
 
@@ -97,7 +96,6 @@ nav img {
 
 /* Add some margin to the main content to make room for the fixed menu */
 main {
-  margin-left: 24%; /* The width of the menu */
   color: rgb(255, 255, 255); 
   font-size: 130%;
 }
@@ -106,9 +104,8 @@ main {
 section {
   padding: 10px;
   margin-bottom: 7%;
-  align-content: space-evenly;
+  align-content:stretch;
   margin-top: 7%;
-
 }
 
 /* Add some margin to the bottom of the footer */
@@ -146,8 +143,7 @@ footer {
 }
 
 #personalName {
-  margin-left: 5%;
-  font-size: xx-large;
+  padding: 3%;
   color: rgb(255, 255, 255);
   font-family: 'Monoton', sans-serif;
 }
@@ -178,7 +174,6 @@ footer {
 }
 
 #sectionimg {
-  width: 20%;
   float: left;
 }
 
@@ -211,6 +206,8 @@ main a :hover {
 #contactinfo {
   color: white;
   text-align:left;
+  align-items: stretch;
+  
 }
 
 #contactinfo div {

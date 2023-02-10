@@ -5,19 +5,18 @@
     <link rel="icon" href="img/planetLogo.png" type="image/x-icon">
     <title>Yelyzaveta Denysova</title>
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src="../local/script_manifold.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="navbar">
         <a><img src="img/planetLogo.png" alt="Logo"></a>
         <h2 id="personalName">Yelyzaveta Denysova</h2>
         <ul>
           <div><a href="#intro">Intro</a></div>
           <div><a href="#about">About me</a></div>
           <div><a href="#exp">Experience</a></div>
-          <div><a href="#skills">Skills&Achievements</a></div>
+          <div><a href="#skills">Skills & Achievements</a></div>
           <div><a href="#insp">Inspiration</a></div>
           <div><a href="#contact">Contact Me</a></div>
         </ul>
@@ -32,24 +31,24 @@
          </a>  </div>       
       </nav>
     </header>
-    <main>
-      <section id="intro">
-        <a><img id="sectionimg" src="img/ship.png" alt="ship"></a>
+    <main id="maincontent">
+      <section class="section" id="intro">
+        <a><img id="sectionimg" class="sectionimg" src="img/ship.png" alt="ship"></a>
         <h1>Intro</h1>
         <p>Hello, traveler! Welcome to my universe! Let me introduce my world to you. 
           I will guide you as we travel but you can always use teleport panel on the 
           left if you ever get lost. </br></br></br> </p>
-    </section>
-    <section id="about">
-        <a><img id="sectionimg" src="img/sun.png" alt="ship"></a>
+    </section >
+    <section class="section" id="about">
+        <a><img id="sectionimg" class="sectionimg" src="img/sun.png" alt="ship"></a>
         <h1>About me</h1>
         <p>This is me. A bright sun and the creator of all energy around. </br>
           My name is Yelyzaveta Denysova or Elya for friends. My hometown is Dnepr - beautiful city combines fast-growing industrial areas with freshness of parks and breathtaking views over the river. 
           In 2019 I left my hometown to begin a journey of reinventing myself in a big world. 
           I traveled to Canada to take a first step in my career ladder - start a Computer Science Coop Bachelor program at Brock University.  Getting accustomed to new culture and keeping up with academic deadlines while living alone for the first time was a tough challenge but I will always be grateful for this experience as it made more dedicated than ever. </p>
-    </section>
-    <section id="exp">
-        <a><img id="sectionimg" src="img/expo.png" alt="ship"></a>
+    </section >
+    <section class="section" id="exp">
+        <a><img id="sectionimg" class="sectionimg" src="img/expo.png" alt="ship"></a>
         <h1>Experience</h1>
         <p>Over the years of the existance of this universe, experience planet developed greatly.</p>
         <button type="button" class="collapsible" style="font-family:'Ubuntu'">Junior Developer: Ministry of Transportation  <i class="fa fa-caret-down"></i></button>
@@ -84,9 +83,9 @@
     <li>Hosting "Parents Night Out", birthday parties and other events involving entertaining group activities and games in fun and informal environment</li>
   </ul>
  </div>
-    </section>
-    <section id="skills">
-        <a><img id="sectionimg" src="img/portfolio.png" alt="ship"></a>
+    </section class="section">
+    <section class="section" id="skills">
+        <a><img id="sectionimg" class="sectionimg" src="img/portfolio.png" alt="ship"></a>
         <h1>Skills & Achievements</h1>
         <p>To avoid costs of travelling across all the moonskills and planetfolios, I organized a list of 
           the things I'd like to share. 
@@ -117,9 +116,9 @@
           <li>Resume <a href="docs/resume.pdf" download><i class="fa fa-download"></i></a></li>
           <li>Transcript <a href="docs/transcript.pdf" download><i class="fa fa-download"></i></a></li>
         </ul></div>
-    </section>
-    <section id="insp">
-        <a><img id="sectionimg" src="img/inspoplanet.png" alt="ship"></a>
+    </section >
+    <section class="section" id="insp">
+        <a><img id="sectionimg" class="sectionimg" src="img/inspoplanet.png" alt="ship"></a>
         <h1>Inspiration</h1>
         <p>This is my inspiration planet. Here I plant the seeds of my interests to grow into passion trees to burn the wood for the fire of my enthusiasm. 
           <br/>My passion for coding started in IT classes back in high school. My teacher not only introduced me to programming but demonstrated how fun and cool it is. I made my first video game in grade 8 and it felt like a discovery of a new life-form in space. It was simple and not that good looking but having the result of my hard work for month that I could share and play myself was the greatest reward.
@@ -132,9 +131,9 @@
       </h3>
         <canvas id="game"></canvas>
         <script src="main.js"></script>
-    </section>
-      <section id="contact">
-        <a><img id="sectionimg" src="img/station.png" alt="ship"></a>
+    </section class="section">
+      <section class="section" id="contact">
+        <a><img id="sectionimg" class="sectionimg" src="img/station.png" alt="ship"></a>
         <h1>Contact Me</h1>
         <p>Now you know more about my universe, and I'd love to learn about you! 
           Stop by my contact station to leave a message or connect with me on social media. </p>
@@ -148,7 +147,7 @@
               +(1) 647 676 4491</br>ed18xy@brocku.ca
             </p>
           </div>
-          <div style="padding-left: 100px;"> <form id="contact-form0">
+          <div style="padding-left: 10px;"> <form id="contact-form0">
             <label for="name">Subject:</label></br>
             <label for="message">Message:</label>
           </form>   </div>
@@ -159,13 +158,34 @@
           </form>   </div>
         </div>
          
-      </section>
+      </section >
     </main>
     <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
+        //adjust sections
+        const navbar = document.getElementById("navbar");
+        const width = navbar.offsetWidth;
+        var section  = document.getElementById("maincontent");
+        section.style.marginLeft = width+"px";
         
-        for (i = 0; i < coll.length; i++) {
+        //adjust images in each section
+        var planets = document.getElementsByClassName("sectionimg");
+        
+        for (var i = 0; i < planets.length; i++) {
+          if(window.innerWidth>600){
+            planets[i].style.width = 0.25*section.offsetWidth+'px';
+          }else{
+            planets[i].style.width = 0.8*section.offsetWidth+'px';
+          }
+          
+        }
+        var sectionels = document.getElementsByClassName("section");
+        for (var i = 0; i < sectionels.length; i++) {
+          sectionels[i].style.minHeight = planets[i].offsetHeight+'px';
+        }
+
+        //add collapsable code 
+        var coll = document.getElementsByClassName("collapsible");
+        for (var i = 0; i < coll.length; i++) {
           coll[i].addEventListener("click", function() {
             this.classList.toggle("active");
             var content = this.nextElementSibling;
