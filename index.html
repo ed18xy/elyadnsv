@@ -165,13 +165,13 @@
         const navbar = document.getElementById("navbar");
         const width = navbar.offsetWidth;
         var section  = document.getElementById("maincontent");
-        section.style.marginLeft = width+"px";
+        section.style.marginLeft = (width+20)+"px";
         
         //adjust images in each section
         var planets = document.getElementsByClassName("sectionimg");
         
         for (var i = 0; i < planets.length; i++) {
-          if(window.innerWidth>600){
+          if(window.innerWidth>750){
             planets[i].style.width = 0.25*section.offsetWidth+'px';
           }else{
             planets[i].style.width = 0.8*section.offsetWidth+'px';
