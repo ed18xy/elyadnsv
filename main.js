@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function() {
       return;
     }
 
-    window.location.href = "mailto:ed18xy@brocku.ca?subject="+name+"&body="+message;
+    window.location.href = "mailto:elyadenysova@gmail.com?subject="+name+"&body="+message;
 
     // Reset form after submit
     form.reset();
