@@ -29,9 +29,12 @@ function createCircle() {
   //create image
   var source;
   let idx = Math.random();
-  if(idx<0.33)source = "img/ast.png";
-  else if(idx<0.66)source = "img/ast2.png";
-  else source = "img/ast3.png";
+  if(idx<0.17)source = "img/ast0.png";
+  else if(idx<0.34)source = "img/ast01.png";
+  else if(idx<0.51)source = "img/ast02.png";
+  else if(idx<0.68)source = "img/ast03.png";
+  else if(idx<0.83)source = "img/ast04.png";
+  else source = "img/ast05.png";
 
   // Create the circle object
   var circle = {
@@ -99,7 +102,7 @@ function animate() {
 
     if(indicator>10){
         let imageExp = new Image();
-        imageExp.src = "img/explosion.png";
+        imageExp.src = "img/explosion1.png";
         ctx.drawImage(imageExp, explosion_x-indicator, explosion_y-indicator, 2*indicator, 2*indicator);
     }
     indicator = indicator-0.5;
