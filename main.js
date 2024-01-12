@@ -284,7 +284,7 @@ document.addEventListener('DOMContentLoaded', function () {
   for (let i = 0; i < portfolioContent.length / 7; i++) {
     var contentRow = document.createElement('div');
     if (window.innerWidth > 600)contentRow.classList.add('contentRow');
-    contentRow.classList.add('contentCol');
+    else contentRow.classList.add('contentCol');
     for (let index = 0; (index + 7 * i < portfolioContent.length) && (index < 7); index++) {
       var containerDoc = document.createElement('div');
       containerDoc.classList.add('containerDoc');
