@@ -283,7 +283,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const portfolio = document.getElementById('portfolio');
   for (let i = 0; i < portfolioContent.length / 7; i++) {
     var contentRow = document.createElement('div');
-    contentRow.classList.add('contentRow');
+    if (window.innerWidth > 600)contentRow.classList.add('contentRow');
+    contentRow.classList.add('contentCol');
     for (let index = 0; (index + 7 * i < portfolioContent.length) && (index < 7); index++) {
       var containerDoc = document.createElement('div');
       containerDoc.classList.add('containerDoc');
