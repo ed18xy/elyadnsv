@@ -195,3 +195,27 @@ main a :hover {
   display: inline-block;
   margin-left: 10px;
 }
+
+/*For portfolio files*/
+.preview-container {
+  transition: transform 0.3s ease;
+  margin: 20px;
+}
+.preview-container:hover {
+  transform: scale(1.5); /* Adjust scale value as needed */
+}
+#doc1img {
+  width: 100%;
+}
+
+.containerDoc {
+  width: 15%;
+  text-align: center;
+}
+
+.contentRow{
+  display: inline-flex;
+}
+.contentCol{
+  display: list-item;
+}
