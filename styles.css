@@ -209,13 +209,9 @@ main a :hover {
 }
 
 .containerDoc {
-  width: 15%;
   text-align: center;
 }
 
 .contentRow{
   display: inline-flex;
-}
-.contentCol{
-  display: list-item;
 }

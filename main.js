@@ -281,19 +281,22 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   ];
   const portfolio = document.getElementById('portfolio');
-  for (let i = 0; i < portfolioContent.length / 7; i++) {
+  if (window.innerWidth > 600)var itemsInLine = 7;
+    else var itemsInLine = 2;
+  for (let i = 0; i < portfolioContent.length / itemsInLine; i++) {
     var contentRow = document.createElement('div');
-    if (window.innerWidth > 600)contentRow.classList.add('contentRow');
-    else contentRow.classList.add('contentCol');
-    for (let index = 0; (index + 7 * i < portfolioContent.length) && (index < 7); index++) {
+    contentRow.classList.add('contentRow');
+    for (let index = 0; (index + itemsInLine * i < portfolioContent.length) && (index < itemsInLine); index++) {
       var containerDoc = document.createElement('div');
       containerDoc.classList.add('containerDoc');
+      containerDoc.style.width = (150/itemsInLine)+'%';
+      var itemIndex = index + itemsInLine * i;
       containerDoc.innerHTML = '<div class="preview-container"><a href="'
-        + portfolioContent[index + 7 * i].contentPath + '" download title="Click to open"><img id="doc1img" class="sectionPimg" src="img/'
-        + portfolioContent[index + 7 * i].image + '" alt="Document Preview"></a></div>'
-        + portfolioContent[index + 7 * i].description + '<a href="'
-        + portfolioContent[index + 7 * i].contentPath + '" download><i class="fa fa-'
-        + portfolioContent[index + 7 * i].type + '"></i></a>'
+        + portfolioContent[itemIndex].contentPath + '" download title="Click to open"><img id="doc1img" class="sectionPimg" src="img/'
+        + portfolioContent[itemIndex].image + '" alt="Document Preview"></a></div>'
+        + portfolioContent[itemIndex].description + '<a href="'
+        + portfolioContent[itemIndex].contentPath + '" download><i class="fa fa-'
+        + portfolioContent[itemIndex].type + '"></i></a>'
       contentRow.appendChild(containerDoc);
     }
     portfolio.appendChild(contentRow);
