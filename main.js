@@ -172,6 +172,12 @@ document.addEventListener('DOMContentLoaded', function () {
       type: "download"
     },
     {
+      contentPath: "https://padlet.com/elyadenysova/2p89labs",
+      image: "feedbackS.png",
+      description: "Student's Feedback",
+      type: "link"
+    },
+    {
       contentPath: "https://www.instagram.com/p/CFScKoipTjJ/",
       image: "international.png",
       description: "Brock International: Interview",
