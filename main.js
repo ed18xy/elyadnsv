@@ -287,15 +287,15 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   ];
   const portfolio = document.getElementById('portfolio');
-  if (window.innerWidth > 600)var itemsInLine = 7;
-    else var itemsInLine = 2;
+  if (window.innerWidth > 750) var itemsInLine = 7;
+  else var itemsInLine = 2;
   for (let i = 0; i < portfolioContent.length / itemsInLine; i++) {
     var contentRow = document.createElement('div');
     contentRow.classList.add('contentRow');
     for (let index = 0; (index + itemsInLine * i < portfolioContent.length) && (index < itemsInLine); index++) {
       var containerDoc = document.createElement('div');
       containerDoc.classList.add('containerDoc');
-      containerDoc.style.width = (150/itemsInLine)+'%';
+      containerDoc.style.width = (150 / itemsInLine) + '%';
       var itemIndex = index + itemsInLine * i;
       containerDoc.innerHTML = '<div class="preview-container"><a href="'
         + portfolioContent[itemIndex].contentPath + '" download title="Click to open"><img id="doc1img" class="sectionPimg" src="img/'
