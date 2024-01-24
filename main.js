@@ -302,7 +302,7 @@ document.addEventListener('DOMContentLoaded', function () {
         + portfolioContent[itemIndex].image + '" alt="Document Preview"></a></div>'
         + portfolioContent[itemIndex].description + '<a href="'
         + portfolioContent[itemIndex].contentPath + '" download><i class="fa fa-'
-        + portfolioContent[itemIndex].type + '"></i></a>'
+        + portfolioContent[itemIndex].type + '"></i></a>'+window.innerWidth
       contentRow.appendChild(containerDoc);
     }
     portfolio.appendChild(contentRow);
