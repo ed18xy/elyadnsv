@@ -215,3 +215,9 @@ main a :hover {
 .contentRow{
   display: inline-flex;
 }
+
+.contextimg {
+  float: right;
+  width: 18%;
+  padding-right: 2%;
+}

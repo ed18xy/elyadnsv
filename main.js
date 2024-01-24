@@ -148,34 +148,22 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener('DOMContentLoaded', function () {
   const portfolioContent = [
     {
-      contentPath: "docs/DH.pdf",
-      image: "Dh1.png",
-      description: "Brock Dean's Honour List - Year One",
-      type: "download"
-    },
-    {
-      contentPath: "docs/DH2.pdf",
-      image: "Dh2.png",
-      description: "Brock Dean's Honour List - Year Two",
-      type: "download"
-    },
-    {
-      contentPath: "docs/DH3.pdf",
-      image: "Dh3.png",
-      description: "Brock Dean's Honour List - Year Three",
-      type: "download"
-    },
-    {
-      contentPath: "docs/GM.pdf",
-      image: "GM.png",
-      description: "Brock General Motors of Canada Scholars Award",
-      type: "download"
-    },
-    {
-      contentPath: "https://padlet.com/elyadenysova/2p89labs",
-      image: "feedbackS.png",
-      description: "Student's Feedback",
+      contentPath: "https://www.figma.com/proto/V1i67CPtlrfBdj5PvNBPX1/Stage-4-Prototype---WORK-HERE?node-id=19-195&starting-point-node-id=19%3A195&mode=design&t=CijUGqwODb4JlUPL-1",
+      image: "PCweb.png",
+      description: "PC Building Website",
       type: "link"
+    },
+    {
+      contentPath: "https://www.physics.brocku.ca/Labs/iOLab/",
+      image: "iolab.png",
+      description: "iOLab web development",
+      type: "link"
+    },
+    {
+      contentPath: "docs/article.pdf",
+      image: "article.png",
+      description: "MTO News Article",
+      type: "download"
     },
     {
       contentPath: "https://www.instagram.com/p/CFScKoipTjJ/",
@@ -196,51 +184,21 @@ document.addEventListener('DOMContentLoaded', function () {
       type: "download"
     },
     {
-      contentPath: "docs/article.pdf",
-      image: "article.png",
-      description: "MTO News Article",
-      type: "download"
-    },
-    {
-      contentPath: "docs/coop1.pdf",
-      image: "feedback1.png",
-      description: "Co-op Spring2021 Employer Feedback",
-      type: "download"
-    },
-    {
-      contentPath: "docs/coop2.pdf",
-      image: "feedback2.png",
-      description: "Co-op Fall2021 Employer Feedback",
-      type: "download"
-    },
-    {
-      contentPath: "docs/coop3.pdf",
-      image: "feedback3.png",
-      description: "Co-op Spring2022 Employer Feedback",
-      type: "download"
-    },
-    {
-      contentPath: "https://padlet.com/elyadenysova/robloxstudio-axzqqmso7yg555q9",
-      image: "scripts.png",
-      description: "CodeNinjas Roblox Scripts",
+      contentPath: "https://padlet.com/elyadenysova/2p89labs",
+      image: "feedbackS.png",
+      description: "Student's Feedback",
       type: "link"
     },
     {
-      contentPath: "https://www.roblox.com/games/7738320878/Magic-Forest-Adventure-Secret-of-the-Lost-Village",
-      image: "adventure.png",
-      description: "Roblox Monetized Adventure Game",
-      type: "link"
-    },
-    {
-      contentPath: "https://www.roblox.com/games/7738483938/Space-Advanced-Obby-Beat-It-If-YOU-Can",
-      image: "obby.png",
-      description: "Roblox Monetized Obby Game",
+      contentPath: "https://www.linkedin.com/feed/update/urn:li:activity:7046505349331234816?utm_source=share&utm_medium=member_desktop",
+      image: "spotlight.jpeg",
+      description: "Brock Student Spotlight",
       type: "link"
     },
     {
       contentPath: "docs/Report.pdf",
       image: "report.png",
-      description: "Cyber Security Project: Vulnerability Report",
+      description: "Cyber Web Security Project: Vulnerability Report",
       type: "download"
     },
     {
@@ -268,6 +226,72 @@ document.addEventListener('DOMContentLoaded', function () {
       type: "link"
     },
     {
+      contentPath: "docs/transcript.pdf",
+      image: "transcript.png",
+      description: "Grades Transcript",
+      type: "download"
+    },
+    {
+      contentPath: "docs/coop1.pdf",
+      image: "feedback1.png",
+      description: "Co-op Spring2021 Employer Feedback",
+      type: "download"
+    },
+    {
+      contentPath: "docs/coop2.pdf",
+      image: "feedback2.png",
+      description: "Co-op Fall2021 Employer Feedback",
+      type: "download"
+    },
+    {
+      contentPath: "docs/coop3.pdf",
+      image: "feedback3.png",
+      description: "Co-op Spring2022 Employer Feedback",
+      type: "download"
+    },
+    {
+      contentPath: "docs/DH.pdf",
+      image: "Dh1.png",
+      description: "Brock Dean's Honour List - Year One",
+      type: "download"
+    },
+    {
+      contentPath: "docs/DH2.pdf",
+      image: "Dh2.png",
+      description: "Brock Dean's Honour List - Year Two",
+      type: "download"
+    },
+    {
+      contentPath: "docs/DH3.pdf",
+      image: "Dh3.png",
+      description: "Brock Dean's Honour List - Year Three",
+      type: "download"
+    },
+    {
+      contentPath: "docs/GM.pdf",
+      image: "GM.png",
+      description: "Brock General Motors of Canada Scholars Award",
+      type: "download"
+    },
+    {
+      contentPath: "https://padlet.com/elyadenysova/robloxstudio-axzqqmso7yg555q9",
+      image: "scripts.png",
+      description: "CodeNinjas Roblox Scripts",
+      type: "link"
+    },
+    {
+      contentPath: "https://www.roblox.com/games/7738320878/Magic-Forest-Adventure-Secret-of-the-Lost-Village",
+      image: "adventure.png",
+      description: "Roblox Monetized Adventure Game",
+      type: "link"
+    },
+    {
+      contentPath: "https://www.roblox.com/games/7738483938/Space-Advanced-Obby-Beat-It-If-YOU-Can",
+      image: "obby.png",
+      description: "Roblox Monetized Obby Game",
+      type: "link"
+    },
+    {
       contentPath: "docs/Certificate.pdf",
       image: "certificate.png",
       description: "Live4Dance Club Member of the Month",
@@ -277,12 +301,6 @@ document.addEventListener('DOMContentLoaded', function () {
       contentPath: "docs/l4d.JPG",
       image: "l4d.JPG",
       description: "Live4Dance Club: My Class",
-      type: "download"
-    },
-    {
-      contentPath: "docs/transcript.pdf",
-      image: "transcript.png",
-      description: "Grades Transcript",
       type: "download"
     }
   ];
