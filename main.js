@@ -122,7 +122,9 @@ setInterval(createCircle, 800);
 // Start the animation
 animate();
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", 
+function () {
+
   const form = document.getElementById("contact-form");
 
   form.addEventListener("submit", function (event) {
@@ -145,7 +147,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //dynamically generate portfolio content
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', generatePortfolio());
+window.addEventListener('resize', function(event) {generatePortfolio()});
+function generatePortfolio(){
   const portfolioContent = [
     {
       contentPath: "https://www.figma.com/proto/V1i67CPtlrfBdj5PvNBPX1/Stage-4-Prototype---WORK-HERE?node-id=19-195&starting-point-node-id=19%3A195&mode=design&t=CijUGqwODb4JlUPL-1",
@@ -305,8 +309,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   ];
   const portfolio = document.getElementById('portfolio');
-  if (window.innerWidth > 850) var itemsInLine = 7;
-  else var itemsInLine = 2;
+  portfolio.innerHTML = "";
+  itemsInLine = Math.floor(window.innerWidth/200);
   for (let i = 0; i < portfolioContent.length / itemsInLine; i++) {
     var contentRow = document.createElement('div');
     contentRow.classList.add('contentRow');
@@ -325,4 +329,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     portfolio.appendChild(contentRow);
   }
-});
+}
+

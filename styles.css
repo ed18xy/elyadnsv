@@ -218,6 +218,13 @@ main a :hover {
 
 .contextimg {
   float: right;
-  width: 18%;
+  width: 20%;
   padding-right: 2%;
+}
+@media (max-width: 750px) {
+  .contextimg {
+    float: right;
+    width: 33%;
+    padding-right: 2%;
+  }
 }
