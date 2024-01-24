@@ -287,7 +287,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   ];
   const portfolio = document.getElementById('portfolio');
-  if (screen.width > 750) var itemsInLine = 7;
+  if (window.innerWidth > 850) var itemsInLine = 7;
   else var itemsInLine = 2;
   for (let i = 0; i < portfolioContent.length / itemsInLine; i++) {
     var contentRow = document.createElement('div');
@@ -302,7 +302,7 @@ document.addEventListener('DOMContentLoaded', function () {
         + portfolioContent[itemIndex].image + '" alt="Document Preview"></a></div>'
         + portfolioContent[itemIndex].description + '<a href="'
         + portfolioContent[itemIndex].contentPath + '" download><i class="fa fa-'
-        + portfolioContent[itemIndex].type + '"></i></a>'+screen.width
+        + portfolioContent[itemIndex].type + '"></i></a>'
       contentRow.appendChild(containerDoc);
     }
     portfolio.appendChild(contentRow);
