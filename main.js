@@ -152,9 +152,45 @@ window.addEventListener('resize', function(event) {generatePortfolio()});
 function generatePortfolio(){
   const portfolioContent = [
     {
+      contentPath: "docs/VRPSPDTW.pdf",
+      image: "VRP.png",
+      description: "AI Research on Vehicle Routing Optimization",
+      type: "download"
+    },
+    {
+      contentPath: "docs/Presentation.pdf",
+      image: "Presentation.png",
+      description: "Presentation on Vehicle Routing Optimization",
+      type: "download"
+    },
+    {
+      contentPath: "https://www.linkedin.com/posts/elyadenysova_cors-conference-last-week-i-had-an-activity-7205912907954483200-CY7M",
+      image: "CORS.png",
+      description: "CORS conference",
+      type: "link"
+    },
+    {
+      contentPath: "https://colab.research.google.com/drive/1eQZxngKZZR8cVz1506Z1ZyhHGH1T5drm?usp=sharing",
+      image: "FineTuner.png",
+      description: "Fine-Tuning Pre-trained Transformer Models on Novel Datasets",
+      type: "link"
+    },
+    {
       contentPath: "https://www.figma.com/proto/V1i67CPtlrfBdj5PvNBPX1/Stage-4-Prototype---WORK-HERE?node-id=19-195&starting-point-node-id=19%3A195&mode=design&t=CijUGqwODb4JlUPL-1",
       image: "PCweb.png",
       description: "PC Building Website",
+      type: "link"
+    },
+    {
+      contentPath: "docs/article.pdf",
+      image: "article.png",
+      description: "MTO News Article",
+      type: "download"
+    },
+    {
+      contentPath: "https://www.linkedin.com/feed/update/urn:li:activity:7046505349331234816?utm_source=share&utm_medium=member_desktop",
+      image: "spotlight.jpeg",
+      description: "Brock Student Spotlight",
       type: "link"
     },
     {
@@ -164,9 +200,15 @@ function generatePortfolio(){
       type: "link"
     },
     {
-      contentPath: "docs/article.pdf",
-      image: "article.png",
-      description: "MTO News Article",
+      contentPath: "https://github.com/kphillippo/habit-tracker",
+      image: "HabitConnect.png",
+      description: "HabitConnect: Software Engineering Project",
+      type: "link"
+    },
+    {
+      contentPath: "docs/LLM_Report.pdf",
+      image: "ToMLLMs.png",
+      description: "Theory of Mind in Large Language Models",
       type: "download"
     },
     {
@@ -194,16 +236,16 @@ function generatePortfolio(){
       type: "link"
     },
     {
-      contentPath: "https://www.linkedin.com/feed/update/urn:li:activity:7046505349331234816?utm_source=share&utm_medium=member_desktop",
-      image: "spotlight.jpeg",
-      description: "Brock Student Spotlight",
-      type: "link"
-    },
-    {
       contentPath: "docs/Report.pdf",
       image: "report.png",
       description: "Cyber Web Security Project: Vulnerability Report",
       type: "download"
+    },
+    {
+      contentPath: "https://my.visme.co/view/q6ey1q7w-tao",
+      image: "TAO.png",
+      description: "Nvidia TAO toolkit presentation",
+      type: "link"
     },
     {
       contentPath: "https://github.com/ed18xy/chess",
@@ -229,12 +271,12 @@ function generatePortfolio(){
       description: "Graphics Project: Kaleidoscope Painter",
       type: "link"
     },
-    {
-      contentPath: "docs/transcript.pdf",
-      image: "transcript.png",
-      description: "Grades Transcript",
-      type: "download"
-    },
+    // {
+    //   contentPath: "docs/transcript.pdf",
+    //   image: "transcript.png",
+    //   description: "Grades Transcript",
+    //   type: "download"
+    // },
     {
       contentPath: "docs/coop1.pdf",
       image: "feedback1.png",
@@ -269,6 +311,12 @@ function generatePortfolio(){
       contentPath: "docs/DH3.pdf",
       image: "Dh3.png",
       description: "Brock Dean's Honour List - Year Three",
+      type: "download"
+    },
+    {
+      contentPath: "docs/DH4.pdf",
+      image: "Dh4.png",
+      description: "Brock Dean's Honour List - Year Four",
       type: "download"
     },
     {
