@@ -152,36 +152,6 @@ window.addEventListener('resize', function(event) {generatePortfolio()});
 function generatePortfolio(){
   const portfolioContent = [
     {
-      contentPath: "docs/VRPSPDTW.pdf",
-      image: "VRP.png",
-      description: "AI Research on Vehicle Routing Optimization",
-      type: "download"
-    },
-    {
-      contentPath: "docs/Presentation.pdf",
-      image: "Presentation.png",
-      description: "Presentation on Vehicle Routing Optimization",
-      type: "download"
-    },
-    {
-      contentPath: "https://www.linkedin.com/posts/elyadenysova_cors-conference-last-week-i-had-an-activity-7205912907954483200-CY7M",
-      image: "CORS.png",
-      description: "CORS conference",
-      type: "link"
-    },
-    {
-      contentPath: "https://colab.research.google.com/drive/1eQZxngKZZR8cVz1506Z1ZyhHGH1T5drm?usp=sharing",
-      image: "FineTuner.png",
-      description: "Fine-Tuning Pre-trained Transformer Models on Novel Datasets",
-      type: "link"
-    },
-    {
-      contentPath: "https://www.figma.com/proto/V1i67CPtlrfBdj5PvNBPX1/Stage-4-Prototype---WORK-HERE?node-id=19-195&starting-point-node-id=19%3A195&mode=design&t=CijUGqwODb4JlUPL-1",
-      image: "PCweb.png",
-      description: "PC Building Website",
-      type: "link"
-    },
-    {
       contentPath: "docs/article.pdf",
       image: "article.png",
       description: "MTO News Article",
@@ -194,15 +164,39 @@ function generatePortfolio(){
       type: "link"
     },
     {
-      contentPath: "https://www.physics.brocku.ca/Labs/iOLab/",
-      image: "iolab.png",
-      description: "iOLab web development",
+      contentPath: "https://www.instagram.com/p/CFScKoipTjJ/",
+      image: "international.png",
+      description: "Brock International: Interview",
       type: "link"
     },
     {
-      contentPath: "https://github.com/kphillippo/habit-tracker",
-      image: "HabitConnect.png",
-      description: "HabitConnect: Software Engineering Project",
+      contentPath: "docs/CNrefer.pdf",
+      image: "CNrefer.png",
+      description: "Employer Reference",
+      type: "download"
+    },
+    {
+      contentPath: "https://padlet.com/elyadenysova/2p89labs",
+      image: "feedbackS.png",
+      description: "Student's Feedback",
+      type: "link"
+    },
+    {
+      contentPath: "docs/VRPSPDTW.pdf",
+      image: "VRP.png",
+      description: "AI Research on Vehicle Routing Optimization",
+      type: "download"
+    },
+    {
+      contentPath: "docs/Presentation.pdf",
+      image: "Presentation.png",
+      description: "Presentation on Vehicle Routing Optimization",
+      type: "download"
+    },
+    {
+      contentPath: "https://colab.research.google.com/drive/1eQZxngKZZR8cVz1506Z1ZyhHGH1T5drm?usp=sharing",
+      image: "FineTuner.png",
+      description: "Fine-Tuning Pre-trained Transformer Models",
       type: "link"
     },
     {
@@ -212,9 +206,33 @@ function generatePortfolio(){
       type: "download"
     },
     {
-      contentPath: "https://www.instagram.com/p/CFScKoipTjJ/",
-      image: "international.png",
-      description: "Brock International: Interview",
+      contentPath: "https://www.physics.brocku.ca/Labs/iOLab/",
+      image: "iolab.png",
+      description: "iOLab web development",
+      type: "link"
+    },
+    {
+      contentPath: "https://www.figma.com/proto/V1i67CPtlrfBdj5PvNBPX1/Stage-4-Prototype---WORK-HERE?node-id=19-195&starting-point-node-id=19%3A195&mode=design&t=CijUGqwODb4JlUPL-1",
+      image: "PCweb.png",
+      description: "PC Building Website",
+      type: "link"
+    },
+    {
+      contentPath: "https://github.com/kphillippo/habit-tracker",
+      image: "HabitConnect.png",
+      description: "HabitConnect: Software Engineering Project",
+      type: "link"
+    },
+    {
+      contentPath: "docs/Report.pdf",
+      image: "report.png",
+      description: "Cyber Web Security Project: Vulnerability Report",
+      type: "download"
+    },
+    {
+      contentPath: "https://www.linkedin.com/posts/elyadenysova_cors-conference-last-week-i-had-an-activity-7205912907954483200-CY7M",
+      image: "CORS.png",
+      description: "CORS conference",
       type: "link"
     },
     {
@@ -230,69 +248,9 @@ function generatePortfolio(){
       type: "download"
     },
     {
-      contentPath: "https://padlet.com/elyadenysova/2p89labs",
-      image: "feedbackS.png",
-      description: "Student's Feedback",
-      type: "link"
-    },
-    {
-      contentPath: "docs/Report.pdf",
-      image: "report.png",
-      description: "Cyber Web Security Project: Vulnerability Report",
-      type: "download"
-    },
-    {
-      contentPath: "https://my.visme.co/view/q6ey1q7w-tao",
-      image: "TAO.png",
-      description: "Nvidia TAO toolkit presentation",
-      type: "link"
-    },
-    {
-      contentPath: "https://github.com/ed18xy/chess",
-      image: "chess.png",
-      description: "Artificial Intelligence Project: Chess",
-      type: "link"
-    },
-    {
-      contentPath: "https://github.com/ed18xy/Genetic-Algorithms",
-      image: "ga.png",
-      description: "Artificial Intelligence Project: Genetic Algorithms Analysis",
-      type: "link"
-    },
-    {
-      contentPath: "https://github.com/ed18xy/ArtificialNeuralNetwork",
-      image: "ann.png",
-      description: "Artificial Neural Networks: Feed-Forward Network trained with Back-Propagation",
-      type: "link"
-    },
-    {
-      contentPath: "https://github.com/ed18xy/KaleidoscopePainter",
-      image: "painter.png",
-      description: "Graphics Project: Kaleidoscope Painter",
-      type: "link"
-    },
-    // {
-    //   contentPath: "docs/transcript.pdf",
-    //   image: "transcript.png",
-    //   description: "Grades Transcript",
-    //   type: "download"
-    // },
-    {
-      contentPath: "docs/coop1.pdf",
-      image: "feedback1.png",
-      description: "Co-op Spring2021 Employer Feedback",
-      type: "download"
-    },
-    {
-      contentPath: "docs/coop2.pdf",
-      image: "feedback2.png",
-      description: "Co-op Fall2021 Employer Feedback",
-      type: "download"
-    },
-    {
-      contentPath: "docs/coop3.pdf",
-      image: "feedback3.png",
-      description: "Co-op Spring2022 Employer Feedback",
+      contentPath: "docs/transcript.pdf",
+      image: "transcript.png",
+      description: "Brock University Official Transcript",
       type: "download"
     },
     {
@@ -324,6 +282,54 @@ function generatePortfolio(){
       image: "GM.png",
       description: "Brock General Motors of Canada Scholars Award",
       type: "download"
+    },
+    {
+      contentPath: "docs/coop1.pdf",
+      image: "feedback1.png",
+      description: "Co-op Spring2021 Employer Feedback",
+      type: "download"
+    },
+    {
+      contentPath: "docs/coop2.pdf",
+      image: "feedback2.png",
+      description: "Co-op Fall2021 Employer Feedback",
+      type: "download"
+    },
+    {
+      contentPath: "docs/coop3.pdf",
+      image: "feedback3.png",
+      description: "Co-op Spring2022 Employer Feedback",
+      type: "download"
+    },
+    {
+      contentPath: "https://my.visme.co/view/q6ey1q7w-tao",
+      image: "TAO.png",
+      description: "Nvidia TAO toolkit presentation",
+      type: "link"
+    },
+    {
+      contentPath: "https://github.com/ed18xy/Genetic-Algorithms",
+      image: "ga.png",
+      description: "Artificial Intelligence Project: Genetic Algorithms Analysis",
+      type: "link"
+    },
+    {
+      contentPath: "https://github.com/ed18xy/ArtificialNeuralNetwork",
+      image: "ann.png",
+      description: "Artificial Neural Networks: Feed-Forward Network trained with Back-Propagation",
+      type: "link"
+    },
+    {
+      contentPath: "https://github.com/ed18xy/chess",
+      image: "chess.png",
+      description: "Artificial Intelligence Project: Chess",
+      type: "link"
+    },
+    {
+      contentPath: "https://github.com/ed18xy/KaleidoscopePainter",
+      image: "painter.png",
+      description: "Graphics Project: Kaleidoscope Painter",
+      type: "link"
     },
     {
       contentPath: "https://padlet.com/elyadenysova/robloxstudio-axzqqmso7yg555q9",
