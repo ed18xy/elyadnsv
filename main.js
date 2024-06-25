@@ -283,24 +283,24 @@ function generatePortfolio(){
       description: "Brock General Motors of Canada Scholars Award",
       type: "download"
     },
-    {
-      contentPath: "docs/coop1.pdf",
-      image: "feedback1.png",
-      description: "Co-op Spring2021 Employer Feedback",
-      type: "download"
-    },
-    {
-      contentPath: "docs/coop2.pdf",
-      image: "feedback2.png",
-      description: "Co-op Fall2021 Employer Feedback",
-      type: "download"
-    },
-    {
-      contentPath: "docs/coop3.pdf",
-      image: "feedback3.png",
-      description: "Co-op Spring2022 Employer Feedback",
-      type: "download"
-    },
+    // {
+    //   contentPath: "docs/coop1.pdf",
+    //   image: "feedback1.png",
+    //   description: "Co-op Spring2021 Employer Feedback",
+    //   type: "download"
+    // },
+    // {
+    //   contentPath: "docs/coop2.pdf",
+    //   image: "feedback2.png",
+    //   description: "Co-op Fall2021 Employer Feedback",
+    //   type: "download"
+    // },
+    // {
+    //   contentPath: "docs/coop3.pdf",
+    //   image: "feedback3.png",
+    //   description: "Co-op Spring2022 Employer Feedback",
+    //   type: "download"
+    // },
     {
       contentPath: "https://my.visme.co/view/q6ey1q7w-tao",
       image: "TAO.png",
