@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
             padding: 0;
             background-color: #f4f4f4;
         }
+
         .container {
             width: 100%;
             padding: 20px;
@@ -21,6 +23,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             position: relative;
         }
+
         .profile-picture {
             float: left;
             margin-right: 20px;
@@ -30,43 +33,54 @@
             object-fit: cover;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
-        h1, h2 {
-            color: #410441; 
+
+        h1,
+        h2 {
+            color: #410441;
             margin-top: 0;
         }
+
         h1 {
             font-size: 2em;
         }
+
         h2 {
             font-size: 1.5em;
             margin-top: 40px;
         }
+
         .section {
             margin-bottom: 30px;
             padding: 25px;
-            background-color: #fbf2f7; 
+            background-color: #fbf2f7;
             border-radius: 8px;
         }
+
         .contactInfo {
             width: 250px;
             padding-right: 5%;
         }
+
         .contactInfo p {
             float: left;
             font-size: 115%;
         }
+
         ul {
             padding-left: 20px;
         }
+
         ul li {
             margin-bottom: 10px;
         }
+
         .university-logo {
             float: left;
             width: 150px;
             height: auto;
             margin-right: 20px;
         }
+
         .transcript-link {
             display: inline-block;
             padding: 10px 15px;
@@ -76,23 +90,48 @@
             border-radius: 5px;
             margin-top: 10px;
         }
+
         @media (max-width: 600px) {
-            .profile-picture, .university-logo {
+
+            .profile-picture,
+            .university-logo {
                 float: none;
                 display: block;
                 margin: 0 auto 20px;
             }
         }
+
+        .transcript-link {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #410441;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .transcript-link:hover {
+            background-color: #320334;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <img src="img/me.jpeg" alt="Yelyzaveta Denysova" class="profile-picture" onerror="this.style.display='none'">
-        
+
         <div class="section">
             <h1>About Me</h1>
-            <p>Hello, I'm Yelyzaveta Denysova, a dedicated web developer passionate about innovation in Artificial Intelligence. I have extensive knowledge of web technologies and user interaction, gained through various courses and practical experience as a Full-Stack developer at the Ministry of Transportation. My skills were recognized as I was invited to complete a web development contract for the physics department at Brock University and hired to instruct labs for the Internet Technology course.</p>
-            <p>I am pursuing my passion for AI by conducting research and developing AI solutions. Currently, I am completing a publication based on my joint research with a professor at Brock University and RideCo. Preliminary results were presented at the Canadian Operational Research Society (CORS) conference.</p>
+            <p>Hello, I'm Yelyzaveta Denysova, a dedicated web developer passionate about innovation in Artificial
+                Intelligence. I have extensive knowledge of web technologies and user interaction, gained through
+                various courses and practical experience as a Full-Stack developer at the Ministry of Transportation. My
+                skills were recognized as I was invited to complete a web development contract for the physics
+                department at Brock University and hired to instruct labs for the Internet Technology course.</p>
+            <p>I am pursuing my passion for AI by conducting research and developing AI solutions. Currently, I am
+                completing a publication based on my joint research with a professor at Brock University and RideCo.
+                Preliminary results were presented at the Canadian Operational Research Society (CORS) conference.</p>
         </div>
 
         <div class="section">
@@ -100,7 +139,8 @@
             <img src="img/brockLogo.png" alt="Brock University" class="university-logo">
             <div style="overflow: hidden;">
                 <h3>Bachelor's Computer Science, Brock University</h3>
-                <h4>Major: Computer Science | Concentration: Intelligent Systems | Co-op | With First-Class Standing</h4>
+                <h4>Major: Computer Science | Concentration: Intelligent Systems | Co-op | With First-Class Standing
+                </h4>
 
                 <ul>
                     <li>Distinguished Graduating Student Award</li>
@@ -122,7 +162,7 @@
                     </ul>
                     <h2>Web Technologies</h2>
                     <ul>
-                        <li>HTML5, CSS, REST APIs, GraphQL</li>
+                        <li>React, HTML5, CSS, REST APIs, GraphQL, Gatsby</li>
                     </ul>
                 </div>
                 <div style="flex: 1; min-width: 250px;">
@@ -137,32 +177,54 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="section">
             <h1>Projects</h1>
             <div style="display: flex; flex-wrap: wrap;">
                 <div style="flex: 1; min-width: 250px; margin-bottom: 20px; margin-right: 10px;">
-                    <img src="img/FineTuner.png" alt="Fine-Tuning Project" style="width: 90%; height: 200px; object-fit: cover; border-radius: 15%;">
+                    <img src="img/FineTuner.png" alt="Fine-Tuning Project"
+                        style="width: 90%; height: 200px; object-fit: cover; border-radius: 15%;">
                     <h2>Fine-Tuning Transformer Models: Natural Language Proccessng Project</h2>
-                    <p>The project aims to optimize model performance through hyperparameter tuning and rigorous evaluation. The workflow involves selecting appropriate datasets, preprocessing and tokenizing the text, and fine-tuning the models using advanced techniques. 3 open-source transformer models from HuggingFace were fine-tuned on 2 open-source datasets, achieving the best-performing model in class.</p>
-                    <a href="https://colab.research.google.com/drive/1eQZxngKZZR8cVz1506Z1ZyhHGH1T5drm?usp=sharing" class="transcript-link" target="_blank">View Project</a>
+                    <p>The project aims to optimize model performance through hyperparameter tuning and rigorous
+                        evaluation. The workflow involves selecting appropriate datasets, preprocessing and tokenizing
+                        the text, and fine-tuning the models using advanced techniques. 3 open-source transformer models
+                        from HuggingFace were fine-tuned on 2 open-source datasets, achieving the best-performing model
+                        in class.</p>
+                    <a href="https://colab.research.google.com/drive/1eQZxngKZZR8cVz1506Z1ZyhHGH1T5drm?usp=sharing"
+                        class="transcript-link" target="_blank">View Project</a>
                 </div>
                 <div style="flex: 1; min-width: 250px; margin-bottom: 20px; margin-right: 10px;">
-                    <img src="img/HabitConnect.png" alt="HabitConnect Project" style="width: 90%; height: 200px; object-fit: cover; border-radius: 15%;">
+                    <img src="img/HabitConnect.png" alt="HabitConnect Project"
+                        style="width: 90%; height: 200px; object-fit: cover; border-radius: 15%;">
                     <h2>HabitConnect: Software Engineering Project</h2>
-                    <p>Acted as a project manager and front-end developer in a group Software Engineering project: creating, assigning, and monitoring tasks in Jira following the Agile development process as well as designing and implementing multiple pages including Home and User Profile. </p>
-                    <a href="https://github.com/kphillippo/habit-tracker" class="transcript-link" target="_blank">View Project</a>
+                    <p>Acted as a project manager and front-end developer in a group Software Engineering project:
+                        creating, assigning, and monitoring tasks in Jira following the Agile development process as
+                        well as designing and implementing multiple pages including Home and User Profile. </p>
+                    <a href="https://github.com/kphillippo/habit-tracker" class="transcript-link" target="_blank">View
+                        Project</a>
                 </div>
                 <div style="flex: 1; min-width: 250px; margin-bottom: 20px; margin-right: 10px;">
-                    <img src="img/PCweb.png" alt="PC Building Website Project" style="width: 90%; height: 200px; object-fit: cover; border-radius: 15%;">
+                    <img src="img/PCweb.png" alt="PC Building Website Project"
+                        style="width: 90%; height: 200px; object-fit: cover; border-radius: 15%;">
                     <h2>PC Building Website: User Experience Project</h2>
-                    <p>Led a project to research and design a PC-building website facilitating principles of Human-Computer Interaction. The project aimed to create a UI for the online shopping platform that allows users to have a convenient, intuitive, straightforward and simple process of purchasing PC parts, pre-built computers, and laptops. This involved conducting a user survey, designing action flows, and creating a demo of the website using Figma.</p>
-                    <a href="https://www.figma.com/proto/V1i67CPtlrfBdj5PvNBPX1/Stage-4-Prototype---WORK-HERE?node-id=19-195&starting-point-node-id=19%3A195&mode=design&t=CijUGqwODb4JlUPL-1" class="transcript-link" target="_blank">View Project</a>
+                    <p>Led a project to research and design a PC-building website facilitating principles of
+                        Human-Computer Interaction. The project aimed to create a UI for the online shopping platform
+                        that allows users to have a convenient, intuitive, straightforward and simple process of
+                        purchasing PC parts, pre-built computers, and laptops. This involved conducting a user survey,
+                        designing action flows, and creating a demo of the website using Figma.</p>
+                    <a href="https://www.figma.com/proto/V1i67CPtlrfBdj5PvNBPX1/Stage-4-Prototype---WORK-HERE?node-id=19-195&starting-point-node-id=19%3A195&mode=design&t=CijUGqwODb4JlUPL-1"
+                        class="transcript-link" target="_blank">View Project</a>
                 </div>
                 <div style="flex: 1; min-width: 250px; margin-bottom: 20px; margin-right: 10px;">
-                    <img src="img/VRP.png" alt="VRP Project" style="width: 90%; height: 200px; object-fit: cover; border-radius: 15%;">
-                    <h2>A Comparison of Evolutionary Crossover Operators for Real-World Vehicle Routing Problems with Simultaneous Pickup and Delivery with Time Windows: Reseach Paper</h2>
-                    <p>This research paper offers insights into optimizing crossover techniques for improved performance in complex routing problems. The paper evaluates evolutionary crossover operators for the Vehicle Routing Problem with Simultaneous Pickup and Delivery with Time Windows (VRPSPDTW). Using a Memetic Algorithm, the study tests these operators on real-world logistics datasets. This work was presented earlier this year at the annual CORS conference.</p>
+                    <img src="img/VRP.png" alt="VRP Project"
+                        style="width: 90%; height: 200px; object-fit: cover; border-radius: 15%;">
+                    <h2>A Comparison of Evolutionary Crossover Operators for Real-World Vehicle Routing Problems with
+                        Simultaneous Pickup and Delivery with Time Windows: Reseach Paper</h2>
+                    <p>This research paper offers insights into optimizing crossover techniques for improved performance
+                        in complex routing problems. The paper evaluates evolutionary crossover operators for the
+                        Vehicle Routing Problem with Simultaneous Pickup and Delivery with Time Windows (VRPSPDTW).
+                        Using a Memetic Algorithm, the study tests these operators on real-world logistics datasets.
+                        This work was presented earlier this year at the annual CORS conference.</p>
                     <a href="docs/VRPSPDTW.pdf" class="transcript-link" download>Download Research Paper</a>
                 </div>
             </div>
@@ -172,55 +234,83 @@
             <h1>Professional Experience</h1>
             <h2>AI Researcher | Brock University</h2>
             <ul>
-                <li>Fine-tuned large language models (LLMs), enhancing their capabilities through performance evaluation and optimal learning parameters.</li>
-                <li>Used Python as primary programming language, Numpy for numerical computations and Pandas for data manipulation.</li>
-                <li>Explored cognitive aspects of LLMs, advancing the understanding of the Theory of Mind in LLMs through specialized psychological tests.</li>
-                <li>Performed interactive training and collaboration in Google Colab, and used HuggingFace for model and data management.</li>
-                <li>Implemented and developed in Java crossover operators for memetic algorithms, addressing complex vehicle routing optimization challenges.</li>
+                <li>Fine-tuned large language models (LLMs), enhancing their capabilities through performance evaluation
+                    and optimal learning parameters.</li>
+                <li>Used Python as primary programming language, Numpy for numerical computations and Pandas for data
+                    manipulation.</li>
+                <li>Explored cognitive aspects of LLMs, advancing the understanding of the Theory of Mind in LLMs
+                    through specialized psychological tests.</li>
+                <li>Performed interactive training and collaboration in Google Colab, and used HuggingFace for model and
+                    data management.</li>
+                <li>Implemented and developed in Java crossover operators for memetic algorithms, addressing complex
+                    vehicle routing optimization challenges.</li>
                 <li>Created foundational architectures, optimizing performance for various applications.</li>
-                <li>Recognized with the prestigious NSERC award for outstanding research contributions and innovative approaches in AI.</li>
-                <li>Presented research findings at the CORS Conference, showcasing innovations in Vehicle Routing Optimization.</li>
+                <li>Recognized with the prestigious NSERC award for outstanding research contributions and innovative
+                    approaches in AI.</li>
+                <li>Presented research findings at the CORS Conference, showcasing innovations in Vehicle Routing
+                    Optimization.</li>
             </ul>
 
             <h2>Full-Stack Developer and Researcher | Ministry of Transportation</h2>
             <ul>
+                <li>Provided maintenance and evolution for the Ontario Public Service educational website.</li>
+                <li>Reduced platform loading times by 98% through effective API optimization.</li>
+                <li>Restructured the SQL database, improving readability and performance by reducing infrastructure by
+                    20%.</li>
+                <li>Collaborated on the development of a new online platform for data management leveraging emerging
+                    technology such Gatsby and GraphQL. </li>
                 <li>Fine-tuned an image classification model on a custom dataset using NVIDIA's advanced toolkit.</li>
                 <li>Automated data collection and storage processes with Python scripts on Azure.</li>
-                <li>Conducted blockchain research, focusing on advancements in cybersecurity and potential applications for the ministry.</li>
-                <li>Enhanced user experiences on educational platforms using JavaScript, C#, and optimized SQL databases.</li>
+                <li>Conducted blockchain research, focusing on advancements in cybersecurity and potential applications
+                    for the ministry.</li>
                 <li>Developed a comprehensive report on NVIDIA's toolkit with a customized dataset.</li>
-                <li>Collected over 100 hours of live footage, demonstrating superior model performance with over 98% accuracy.</li>
+                <li>Collected over 100 hours of live footage, demonstrating superior model performance with over 98%
+                    accuracy.</li>
                 <li>Delivered impactful presentations on blockchain technology, increasing awareness by 70%.</li>
-                <li>Reduced platform loading times by 98% through effective API optimization.</li>
-                <li>Restructured the SQL database, improving readability and performance by reducing infrastructure by 20%.</li>
             </ul>
 
             <h2>Lab Demonstrator | Brock University</h2>
             <ul>
-                <li>Taught practical skills in web development including HTML, CSS, JavaScript, PHP, SQL, and Python through live demonstrations and exercises.</li>
-                <li>Collaborated with other TAs and professors to improve lab curriculum and provide student feedback.</li>
-                <li>Shared techniques for creating fast, responsive, and secure web pages, increasing student interest.</li>
-                <li>Managed lab groups, consultation hours, exam sessions, and grading while preparing labs and answering emails.</li>
-                <li>Volunteered to design and distribute a lab practice test, achieving over 50% student engagement and improving scores by 15%.</li>
+                <li>Taught practical skills in web development including HTML, CSS, JavaScript, PHP, SQL, and Python
+                    through live demonstrations and exercises.</li>
+                <li>Collaborated with other TAs and professors to improve lab curriculum and provide student feedback.
+                </li>
+                <li>Shared techniques for creating fast, responsive, and secure web pages, increasing student interest.
+                </li>
+                <li>Multitasked in managing lab groups, consultation hours, exam sessions, and grading while preparing
+                    labs and answering emails.</li>
+                <li>Volunteered to design and distribute a lab practice test, achieving over 50% student engagement and
+                    improving scores by 15%.</li>
             </ul>
 
             <h2>Web Developer | Brock University</h2>
             <ul>
-                <li>Developed and integrated new features in JavaScript for hardware plug-ins, including three new sensors.</li>
-                <li>Conducted extensive software testing and provided technical suggestions throughout planning and implementation.</li>
-                <li>Communicated with professors to ensure quality products by deadlines and provide design improvement suggestions.</li>
-                <li>Documented all work in detail, including in-line comments and supporting documentation, achieving 100% code coverage on testing.</li>
+                <li>Developed and integrated new software in JavaScript for hardware plug-ins, including three new
+                    sensors.</li>
+                <li>Directed technical aspects to ensure quality product by deadline and provided design improvement
+                    suggestions.</li>
+                <li>Conducted extensive software testing and provided technical suggestions throughout planning and
+                    implementation stages.</li>
+                <li>Documented all work in detail, including in-line comments and supporting documentation, achieving
+                    100% code coverage on testing.</li>
             </ul>
         </div>
-        
-        
-        
+
+
+
         <div class="section">
             <h1>Contact Information</h1>
-            <p>I am always on a look out for interesting opportunities and potential collaborations! Let's connect on LinkedIn or chat via email:</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/elyadenysova/" target="_blank">https://www.linkedin.com/in/elyadenysova/</a></p>
+            <p>I am always on a look out for interesting opportunities and potential collaborations! Let's connect on
+                LinkedIn or chat via email:</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/elyadenysova/"
+                    target="_blank">https://www.linkedin.com/in/elyadenysova/</a></p>
             <p>Email: <a href="mailto:elyadenysova@gmail.com">elyadenysova@gmail.com</a></p>
+            Learn more about me and see my extended portfolio:  <a href="https://ed18xy.github.io/elyadnsv"
+                class="transcript-link">
+                Go on adventure &rarr;
+            </a>
         </div>
     </div>
 </body>
+
 </html>
