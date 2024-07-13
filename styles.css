@@ -33,19 +33,20 @@ main h1{
 
 /* Set the background image */
 body {
-  background-image: url('img/sky0.png'); /* Switch to online url*/
+  background-image: url('img/skybg4.webp'); 
   
-  /* Scale the image to fit the screen */
   background-size: cover;
   
-  /* Position the image in the center */
   background-position: center;
   
-  /* Make the image fixed so it does not scroll with the page */
   background-attachment: fixed;
 
 }
+/* 
+skybg.webp
+skybg4.webp
 
+*/
 /* Set the color of the text in the header to green */
 header {
   color: green;
@@ -115,7 +116,7 @@ footer {
 
 #intro, #about, #exp, #skills, #insp, #contact{
   background-color: rgba(0, 0, 0, 0.6);
-  border: 1px solid rgba(0, 0, 74, 0.6);
+  /* border: 1px solid rgba(0, 0, 74, 0.6); */
 }
 
 #gameplace h3{

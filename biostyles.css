@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #410441;
+    background-size: cover;
+    background-position: center;
+
+    padding: 10px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+    padding-top: 2%;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 10px;
+}
+
+.navbar ul li a:hover {
+    background-color: #e197e3; /* Lighter background color on hover */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5%; /* Optional: add rounded corners */
+}
+
+.adventure-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #fbf2f7;
+    color: #410441;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.adventure-button:hover {
+    background-color: #e3d7df;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.profile-picture {
+    float: left;
+    margin-right: 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1,
+h2 {
+    color: #410441;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+.section {
+    
+    background-color: white;
+    border-radius: 8px;
+}
+.subsection {
+    background-color: #fbf2f7;
+    padding: 5px 20px 20px 20px;
+    margin-bottom: 55px;
+}
+
+.contactInfo {
+    width: 250px;
+    padding-right: 5%;
+}
+
+.contactInfo p {
+    float: left;
+    font-size: 115%;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.university-logo {
+    float: left;
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.transcript-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #410441;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+
+    .profile-picture,
+    .university-logo {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+    }
+}
+
+.transcript-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #410441;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.transcript-link:hover {
+    background-color: #320334;
+}
+.section {
+    padding-top: 90px; /* Adjust this value based on your navbar height */
+    margin-top: -70px; /* Negative margin to offset the height */
+}
