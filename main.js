@@ -29,12 +29,12 @@ function createCircle() {
     //create image
     var source;
     let idx = Math.random();
-    if (idx < 0.17) source = "img/asteroid0.png";
-    else if (idx < 0.34) source = "img/asteroid01.png";
-    else if (idx < 0.51) source = "img/asteroid02.png";
-    else if (idx < 0.68) source = "img/asteroid03.png";
-    else if (idx < 0.83) source = "img/asteroid04.png";
-    else source = "img/asteroid05.png";
+    if (idx < 0.17) source = "img/asteroid1.png";
+    else if (idx < 0.34) source = "img/asteroid2.png";
+    else if (idx < 0.51) source = "img/asteroid3.png";
+    else if (idx < 0.68) source = "img/asteroid4.png";
+    else if (idx < 0.83) source = "img/asteroid5.png";
+    else source = "img/asteroid5.png";
 
     // Create the circle object
     var circle = {
@@ -103,7 +103,7 @@ function animate() {
 
     if (indicator > 10) {
       let imageExp = new Image();
-      imageExp.src = "img/explosion.png";
+      imageExp.src = "img/explosion1.png";
       ctx.drawImage(imageExp, explosion_x - indicator, explosion_y - indicator, 2 * indicator, 2 * indicator);
     }
     indicator = indicator - 0.5;
