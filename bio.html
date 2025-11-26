@@ -7,15 +7,17 @@
     <title>About Yelyzaveta Denysova</title>
     <link rel="icon" href="img/planetLogo0.png" type="image/x-icon">
     <link rel="stylesheet" href="biostyles.css">
+    <!-- Use Playfair Display for classy professional headings and Inter for body text -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="navbar">
-        <h1>Yelyzaveta Denysova</h1>
         <ul>
             <li><a href="#about">About Me</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#technical-proficiency">Technical Proficiency</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#professional-experience">Professional Experience</a></li>
             <li><a href="#contact-information">Contact Information</a></li>
@@ -25,23 +27,67 @@
     </div>
 
     <div class="container">
-        <img src="img/me.jpeg" alt="Yelyzaveta Denysova" class="profile-picture" onerror="this.style.display='none'">
+        <!-- main page title removed — hero's name is primary now -->
 
-        <div class="section" id="about">
-            <div class="subsection" id="about">
-                <h1>About Me</h1>
-                <p>Hello, I'm Yelyzaveta Denysova, a dedicated developer passionate about innovation in Artificial
-                    Intelligence. I have extensive knowledge of web technologies and user interaction, gained through
-                    various courses and practical experience as a junior developer at the Ministry of
-                    Transportation. My
-                    skills were recognized as I was invited to complete a web development contract for the physics
-                    department at Brock University and hired to instruct labs for the Internet Technology course.</p>
-                <p>I am pursuing my passion for AI by conducting research and developing AI solutions. Currently, I am
-                    completing a publication based on my joint research with a professor at Brock University and RideCo.
-                    Preliminary results were presented at the Canadian Operational Research Society (CORS) conference.
-                </p>
+        <!-- HERO: visual, at-a-glance introduction / CTA + icon-board -->
+        <section class="hero">
+            <div class="hero-left">
+                <span class="hero-tag">Software Developer &amp; AI Researcher</span>
+                <h1>Yelyzaveta Denysova</h1>
+                <p class="hero-sub">Turning complex challenges into reliable, optimized software.</p>
+
+                <div class="hero-actions">
+                    <a href="#professional-experience" class="btn-primary">Learn More</a>
+                    <a href="#contact-information" class="btn-secondary">Contact Me</a>
+                </div>
             </div>
-        </div>
+
+            <div class="hero-grid">
+                <a href="#education" class="hero-card">
+                    <div class="icon"><img src="img/brock_icon.jpg" alt="Brock University" class="hero-icon-img"></div>
+                    <div class="card-title">BSc Computer Science</div>
+                    <div class="card-sub">Brock University<br>Honours · NSERC</div>
+                </a>
+
+                <a href="#aws-engineer" class="hero-card">
+                    <div class="icon">
+                        <img class="hero-icon-img" src="img/aws_icon.webp" alt="AWS">
+                    </div>
+                    <div class="card-title">AWS Engineer</div>
+                    <div class="card-sub">Software Engineering · Security</div>
+                </a>
+
+                <a href="#junior-developer" class="hero-card">
+                    <div class="icon"><img src="img/mto_icon.jpg" alt="Ministry of Transportation" class="hero-icon-img"></div>
+                    <div class="card-title">Ministry of Transportation</div>
+                    <div class="card-sub">Web Development · Machine Learning</div>
+                </a>
+
+                <a href="#ai-researcher" class="hero-card">
+                    <div class="icon">
+                        <img class="hero-icon-img" src="img/ai_icon.png" alt="AI Research">
+                    </div>
+                    <div class="card-title">AI Research</div>
+                    <div class="card-sub">AI Research &amp; Optimization<br>Optimization Algorithms · NLP · PyTorch</div>
+                </a>
+
+                <a href="#projects" class="hero-card">
+                    <div class="icon">
+                        <img class="hero-icon-img" src="img/projects_icon.jpg" alt="Projects">
+                    </div>
+                    <div class="card-title">Projects</div>
+                    <div class="card-sub">Projects &amp; Achievements<br>Web · ML · Cloud</div>
+                </a>
+
+                <a href="#skills" class="hero-card">
+                    <div class="icon">
+                        <img class="hero-icon-img skills-icon" src="img/skills_icon.jpg" alt="Skills">
+                    </div>
+                    <div class="card-title">Skills</div>
+                    <div class="card-sub">Technical Skills<br>Java · Python · AWS · React</div>
+                </a>
+            </div>
+        </section>
 
         <div class="section" id="education">
             <div class="subsection" id="about">
@@ -63,29 +109,24 @@
             </div>
         </div>
 
-        <div class="section" id="technical-proficiency">
+        <div class="section" id="skills">
             <div class="subsection" id="about">
-                <h1>Technical Proficiency</h1>
-                <div style="display: flex; flex-wrap: wrap;">
-                    <div style="flex: 1; min-width: 250px;">
-                        <h2>Programming Languages</h2>
-                        <ul>
-                            <li>Java, Python, JavaScript, C++, C#, Lua, PHP</li>
-                        </ul>
-                        <h2>Web Technologies</h2>
-                        <ul>
-                            <li>React, HTML5, CSS, REST APIs, GraphQL, Gatsby</li>
-                        </ul>
+                <h1>Skills</h1>
+                <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+                    <div style="flex: 1; min-width: 260px;">
+                        <h2>Core Skills</h2>
+                        <p>Java &middot; Python &middot; JavaScript &middot; SQL &middot; AWS</p>
+
+                        <h2>AI / ML</h2>
+                        <p>Optimization Algorithms &middot; NLP &middot; PyTorch</p>
                     </div>
-                    <div style="flex: 1; min-width: 250px;">
-                        <h2>Tools & Platforms</h2>
-                        <ul>
-                            <li>Docker, Azure, AWS, Google Colab, GIT, VScode, SQL, HuggingFace</li>
-                        </ul>
-                        <h2>Frameworks & Libraries</h2>
-                        <ul>
-                            <li>TensorFlow, Numpy, Pandas</li>
-                        </ul>
+
+                    <div style="flex: 1; min-width: 260px;">
+                        <h2>Web Development</h2>
+                        <p>React &middot; Node.js &middot; Django &middot; REST APIs</p>
+
+                        <h2>Tools &amp; DevOps</h2>
+                        <p>Git &middot; Linux &middot; CI/CD &middot; Docker</p>
                     </div>
                 </div>
             </div>
@@ -156,7 +197,7 @@
         <div class="section" id="professional-experience">
             <div class="subsection" id="about">
                 <h1>Professional Experience</h1>
-                <h2>Software Development Engineer | AWS - Aurora</h2>
+                <h2 id="aws-engineer">Software Development Engineer | AWS - Aurora</h2>
                 <ul>
                     <li>Designed, implemented, and optimized backend APIs to support new features, improving reliability, scalability, and developer integration workflows.</li>
                     <li>Strengthened service security by identifying vulnerabilities, implementing durable fixes, and validating patch effectiveness.</li>
@@ -166,7 +207,7 @@
                     <li>Executed large-scale production updates across 100+ customer instances, ensuring service availability, consistency, and operational reliability.</li>
                     <li>Developed and ran comprehensive system tests that uncovered two major defects in a new service feature before release, preventing customer-impacting failures.</li>
                 </ul>
-                <h2>AI Researcher | Brock University</h2>
+                <h2 id="ai-researcher">AI Researcher | Brock University</h2>
                 <ul>
                     <li>Fine-tuned large language models (LLMs), enhancing their capabilities through performance
                         evaluation
@@ -189,7 +230,7 @@
                         Optimization.</li>
                 </ul>
 
-                <h2>Junior Developer | Ministry of Transportation</h2>
+                <h2 id="junior-developer">Junior Developer | Ministry of Transportation</h2>
                 <ul>
                     <li>Provided maintenance and evolution of the Ontario Public Service educational website DigitalWorld.</li>
                     <li>Reduced platform loading times by 98% through effective API optimization.</li>

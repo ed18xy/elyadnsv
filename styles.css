@@ -17,17 +17,19 @@
 }
 
 /* Set the font for the entire document */
+/* Use Inter for body text, and keep local fallbacks already available */
 main {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Inter', 'Ubuntu', sans-serif;
 }
 
 nav ul {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Inter', 'Ubuntu', sans-serif;
   padding: 7%;
 }
 
+/* Headings use Playfair Display for a refined, classy serif look */
 main h1{
-  font-family: 'Varino', sans-serif;
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
 }
 
 
@@ -127,7 +129,9 @@ footer {
 #personalName {
   padding: 3%;
   color: rgb(255, 255, 255);
-  font-family: 'Monoton', sans-serif;
+  /* make the personal name simpler and cohesive with headings */
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-weight: 400;
 }
 
 #social {

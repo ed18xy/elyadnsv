@@ -1,31 +1,42 @@
+:root{
+    --page-bg: #f4f5f7; /* very light gray */
+    --card-bg: #ffffff; /* card background */
+    --text: #111827; /* primary text */
+    --accent: #410441; /* old dark purple */
+    --accent-light: #e3d7df; /* lighter, soft hover */
+    --card-radius: 12px;
+    --card-shadow: 0 8px 22px rgba(17,24,39,0.06);
+}
+
 body {
-    font-family: Arial, sans-serif;
+    /* Use Inter for body text to pair well with Playfair Display (headings) */
+    font-family: 'Inter', Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: var(--page-bg);
+    color: var(--text);
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #410441;
+    background-color: var(--accent);
     background-size: cover;
     background-position: center;
 
-    padding: 10px 20px;
+    /* slightly shorter navbar */
+    padding: 0.5rem 1.25rem;
     color: white;
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.10);
 }
 
-.navbar h1 {
-    margin: 0;
-    font-size: 1.5em;
-    color: white;
-}
+
+/* .page-title removed — hero heading is used */
 
 .navbar ul {
     list-style: none;
@@ -40,75 +51,83 @@ body {
 }
 
 .navbar ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-size: 1.1em;
-    padding: 5px 10px;
+    font-size: 1.12em; /* slightly larger nav text */
+    padding: 4px 8px; /* slightly less vertical padding */
+    margin-left: 1.25rem;
+    font-weight: 500;
 }
 
 .navbar ul li a:hover {
-    background-color: #e197e3; /* Lighter background color on hover */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5%; /* Optional: add rounded corners */
+    color: var(--accent-light);
 }
 
 .adventure-button {
     display: inline-block;
-    padding: 5px 10px;
-    background-color: #fbf2f7;
-    color: #410441;
+    padding: 6px 12px;
+    background-color: var(--accent);
+    color: #fff !important;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+    border-radius: 8px;
+    font-weight: 600;
 }
 
 .adventure-button:hover {
-    background-color: #e3d7df;
+    background-color: rgba(65,4,65,0.9);
 }
 
 .container {
     width: 100%;
     padding: 20px;
-    background: white;
+    background: transparent; /* keep page light-gray, sections become "cards" */
     box-sizing: border-box;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
+    max-width: 1150px; /* slightly less wide overall */
+    margin: 0 auto;
 }
 
-.profile-picture {
-    float: left;
-    margin-right: 20px;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
 
+/* profile image removed; kept styles for other images */
 h1,
 h2 {
-    color: #410441;
+    color: var(--text);
     margin-top: 0;
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.6em;
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    font-weight: 400; /* simpler, not bold */
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 1.7em;
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    font-weight: 400; /* not bold */
     margin-top: 40px;
 }
 
 .section {
-    
-    background-color: white;
-    border-radius: 8px;
+    background: transparent; /* section container stays transparent */
+    margin-bottom: 42px;
 }
 .subsection {
-    background-color: #fbf2f7;
-    padding: 5px 20px 20px 20px;
-    margin-bottom: 55px;
+    background-color: var(--card-bg);
+    padding: 28px 32px 32px 32px; /* slightly less wide padding for tighter look */
+    margin-bottom: 36px;
+    border-radius: var(--card-radius);
+    box-shadow: var(--card-shadow);
+}
+
+@media (max-width: 900px) {
+    .container { padding-left: 12px; padding-right: 12px; }
+    .subsection { padding: 18px 16px; }
+}
+
+/* Reduce vertical gap between subsection H1 and subsequent H2 headings */
+.subsection h2 {
+    margin-top: 12px; /* tighter spacing for subtitle headings */
 }
 
 .contactInfo {
@@ -139,16 +158,15 @@ ul li {
 .transcript-link {
     display: inline-block;
     padding: 10px 15px;
-    background-color: #410441;
-    color: white;
+    background-color: var(--accent);
+    color: white !important;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
     margin-top: 10px;
 }
 
 @media (max-width: 600px) {
 
-    .profile-picture,
     .university-logo {
         float: none;
         display: block;
@@ -156,21 +174,124 @@ ul li {
     }
 }
 
-.transcript-link {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: #410441;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    font-weight: bold;
-}
+
 
 .transcript-link:hover {
-    background-color: #320334;
+    background-color: rgba(65,4,65,0.9);
 }
 .section {
     padding-top: 90px; /* Adjust this value based on your navbar height */
     margin-top: -70px; /* Negative margin to offset the height */
+}
+
+/* subtle header accent underlines */
+.subsection h1 {
+    position: relative;
+    padding-bottom: 8px;
+}
+.subsection h1::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 56px;
+    background: var(--accent);
+    border-radius: 2px;
+    margin-top: 8px;
+}
+
+/* Offset anchor targets to account for sticky navbar */
+.subsection h2[id] {
+    scroll-margin-top: 90px;
+}
+
+/* links inside content use accent */
+.subsection a,
+.container a {
+    color: var(--accent);
+}
+
+/* small label style for badges (used on li's or span.badge if added later) */
+.badge {
+    display: inline-block;
+    padding: 3px 8px;
+    background: rgba(65,4,65,0.08);
+    color: var(--accent);
+    border-radius: 999px;
+    font-size: 0.85em;
+    margin-left: 6px;
+}
+
+/* HERO: left intro + right icon-card grid */
+.hero {
+    display: grid;
+    /* keep right column size but reduce left column width so top double section is less wide */
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.95fr);
+    gap: 2.8rem; /* slightly tighter gap so columns sit closer */
+    align-items: center;
+    padding: 3.5rem 1.5rem 3.5rem; /* more breathing room */
+    max-width: 1150px; /* slightly less wide hero to match page */
+    margin: 0 auto 36px;
+}
+.hero-left .hero-tag {
+    display: inline-block;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    font-weight: 600;
+}
+.hero-left h1 {
+    font-size: 2.9rem; /* slightly smaller to avoid wrapping */
+    margin: 0.35rem 0 0.6rem;
+    color: var(--text);
+}
+.hero-left{
+    background: var(--card-bg);
+    padding: 32px 28px; /* reduced vertical padding so left card is shorter */
+    border-radius: 12px;
+    box-shadow: var(--card-shadow);
+    border: 1px solid rgba(0,0,0,0.04);
+    /* center content vertically so the left card reads balanced */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 340px; /* shorter left column */
+}
+.hero-sub {
+    color: #4b5563;
+    max-width: 36rem;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+.hero-actions{margin-top:1.5rem; display:flex; gap:14px}
+.btn-primary{ padding:0.9rem 1.6rem; border-radius:999px; background:var(--accent); color:#fff !important; font-weight:700; text-decoration:none; font-size:1rem }
+.hero .btn-primary { color: #ffffff !important; /* ensure hero button text is visible (overrides .container a) */ }
+.btn-primary:hover{ background: rgba(65,4,65,0.95); }
+.btn-secondary{ padding:0.9rem 1.6rem; border-radius:999px; border:1px solid #e5e7eb; color:#374151; text-decoration:none; font-weight:600; background:transparent; font-size:0.98rem }
+.hero .btn-secondary { color: #374151; }
+.btn-secondary:hover{ background:#f9fafb }
+
+.hero-grid{ display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:1.1rem }
+.hero-card{
+    background: var(--card-bg);
+    border-radius: 1rem;
+    padding: 0.9rem 1rem; /* slightly smaller cards to reduce overall height */
+    text-decoration: none;
+    border: 1px solid #e9e5eb;
+    box-shadow: 0 8px 18px rgba(15,23,42,0.05);
+    transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease, background-color .15s ease;
+}
+.hero-card:hover{ transform:translateY(-3px); box-shadow:0 12px 28px rgba(15,23,42,0.10); border-color:var(--accent); background: rgba(65,4,65,0.03); }
+.hero-card .icon{ font-size:1.5rem; margin-bottom:0.25rem }
+.hero-card .icon img.hero-icon-img{ width:44px; height:44px; object-fit:contain; display:block; }
+.hero-card .icon img.hero-icon-img.skills-icon{ width:36px; height:36px; margin: 4px 4px 8px 4px; }
+.hero-card .icon svg.hero-svg{ width:44px; height:44px; display:block; color:var(--accent); }
+.card-title{ font-weight:700; color:var(--text); font-size:0.98rem }
+.card-sub{ font-size:0.82rem; color:#6b7280 }
+
+@media (max-width: 900px){
+        .hero{ grid-template-columns:1fr; gap:1.5rem; padding-top:1.5rem }
+        .hero-left{ padding: 24px; min-height: auto; }
+        .hero-left h1{ font-size:2.2rem }
+        .hero-grid{ grid-template-columns:repeat(2,minmax(0,1fr)) }
 }
